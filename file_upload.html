@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="index.php">
+        <label for="file-select">Select file:</label>
+        <input type="file" value="upload" id="file-select">
+
+    </form>
+
+    <!--grouping similar form fields-->
+
+    <br>
+
+    <form>
+        <fieldset>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <!--submit and reset-->
+
+    <form action="/examples/html/action.php" method="POST">
+        <label for="first-name">First name:</label>
+        <input type="text" name="first-name" id="first-name">
+        <label for="last-name">Last name:</label>
+        <input type="text" name="last-name" id="last-name">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

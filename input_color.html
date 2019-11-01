@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function getValue()
+        {
+            var color = document.getElementById("my color").value;
+            alert(color);
+        }
+    </script>
+
+    <form>
+        <label for="my color">Select color:</label>
+        <input type="color" value="00ff00" id="my color">
+        <button type="button" onclick="getValue()";>Get value</button>
+    </form>
+    
+
+</body>
+</html>
